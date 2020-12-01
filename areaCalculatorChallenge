@@ -1,0 +1,32 @@
+package academy.learnprogrmming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        System.out.println(area(-1));
+        System.out.println(area(5.0, 4.0));
+    }
+    public static final double PI= Math.PI;
+
+    public static double area(double radius) {
+        if(radius < 0) {
+            return -1.0;
+        }
+        return radius * radius * PI;
+    }
+    public static double area(double x, double y) {
+        if((x <0) || (y < 0)) {
+            return -1.0;
+
+        }
+        double rectangle = x * y;
+        return rectangle;
+    }
+}
+"C:\Program Files\Java\jdk-15.0.1\bin\java.exe" "-javaagent:C:\Users\nadiy\OneDrive\Desktop\IntelliJ IDEA Community Edition 2020.2.3\lib\idea_rt.jar=51287:C:\Users\nadiy\OneDrive\Desktop\IntelliJ IDEA Community Edition 2020.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\nadiy\IdeaProjects\AreaCalculatorExercise\out\production\AreaCalculatorExercise academy.learnprogrmming.Main
+-1.0
+20.0
+
+Process finished with exit code 0
